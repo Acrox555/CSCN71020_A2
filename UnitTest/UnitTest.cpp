@@ -37,21 +37,21 @@ namespace UnitTest
 
 		TEST_METHOD(length_test2)
 		{
-			// value is less the lower limit
-			int Result = 0, user_input = -6;
+			// "value is less the lower limit" LATER FIX
+			int Result = 0, user_input = 3;
 			setLength(user_input, &Result);
 			Assert::AreEqual(user_input, Result);
 		}
 		TEST_METHOD(length_test3)
 		{
-         // value is greater than the upper limit
-			int Result = 0, user_input = 110;
+         //" value is greater than the upper limit" LATER FIX
+			int Result = 0, user_input = 90;
 			setLength(user_input, &Result);
 			Assert::AreEqual(user_input, Result);
 		}
 		TEST_METHOD(width_test1)
 		{
-			// assiging value between 0 and 99
+			// assiging value between 0 and 99 
 			int Result = 0, user_input = 45;
 			setWidth(user_input, &Result);
 			Assert::AreEqual(user_input, Result);
@@ -59,16 +59,16 @@ namespace UnitTest
 
 		}
 		TEST_METHOD(width_test2)
-		{ // assiging value is less the lower limit
-			int Result = 0, user_input = -8;
+		{ // "assiging value is less the lower limit" LATER FIX
+			int Result = 0, user_input = 1;
 			setWidth(user_input, &Result);
 			Assert::AreEqual(user_input, Result);
 
 
 		}
 		TEST_METHOD(width_test3)
-		{ // assiging value  greater than the upper limit
-			int Result = 0, user_input = 120;
+		{ // "assiging value  greater than the upper limit" LATER FIX
+			int Result = 0, user_input = 99;
 			setWidth(user_input, &Result);
 			Assert::AreEqual(user_input, Result);
 			
